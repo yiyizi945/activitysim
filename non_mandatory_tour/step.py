@@ -8,3 +8,4 @@ with open("non_mandatory_tour_destination.py", "r") as file:
 print("Step 3: Finished non_mandatory_tour_scheduling.py")
 with open("non_mandatory_tour_schedule.py", "r") as file:
     exec(file.read())
+    

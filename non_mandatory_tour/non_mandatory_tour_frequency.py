@@ -23,12 +23,12 @@ class Non_Mandatory_Tour_Frequency(object):
             alternatives_path = "../data/alternatives_non_mandatory_tour_frequency.csv"
         alternatives = pd.read_csv(alternatives_path, index_col=0)
         if chooser_data_path is None:       # 选择者
-            chooser_data_path = "../data/non_mandatory_frequency_choosers.csv"
+            chooser_data_path = "../data/non_mandatory_frequency_choosers1.csv"
         chooser_data = pd.read_csv(chooser_data_path, index_col=0)
         if model_expression is None:        # 模型表达式
             # c tot_tours == 1&is_famale + is_famale*_shopping + is_famale*_othmaint + is_famale*_eatout + auto_ownership&tot_tours == 1 + auto_ownership&tot_tours == 2
             # model_expression = 'tot_tours + shopping + eatout + social'
-            model_expression = 'tot_tours == 1 + tot_tours == 2 + tot_tours == 3 + tot_tours == 4 + tot_tours == 5 + shopping + eatout + social'
+            model_expression = 'tot_tours == 1 + tot_tours == 2 + tot_tours == 3 + tot_tours == 4 + tot_tours == 5 + shopping + eatout + social '
                                 # is_female&(tot_tours == 1) + is_female&(tot_tours == 2) + is_female&(tot_tours == 3) + \
                                 # is_female&(tot_tours == 4) + is_female&(tot_tours == 5)'
 
